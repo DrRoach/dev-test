@@ -17,9 +17,12 @@ class Route
         return null;
     }
 
+    /**
+     * Add any new routes into this method. The key is the path and the value follows Laravel's
+     *  {class}@{method} format. Class namespace is required due to autoloader
+     */
     private function getRoutes()
     {
-        // Array of routes and the namespaced controllers they call
         return [
             '/' => 'src\Controllers\CharacterController@all',
             '/search' => 'src\Controllers\CharacterController@search',

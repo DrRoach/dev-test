@@ -8,7 +8,7 @@ use Routes\Route;
 // Handle the routing of the URL
 $router = new Route();
 
-// If PATH_INFO isn't set then default to `/`
+// Find the correct controller and method to call using the path. If PATH_INFO isn't set then default to `/`
 $routeCall = $router->findRoute($_SERVER['PATH_INFO'] ?? "/");
 
 // If findRoute() returns null then the requested route doesn't exist

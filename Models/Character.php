@@ -18,6 +18,9 @@ class Character
     public $episode;
     public $url;
 
+    /**
+     * Set all default variables on creation
+     */
     public function __construct($data)
     {
         $this->id = $data->id ?? null;
