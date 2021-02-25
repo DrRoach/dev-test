@@ -4,6 +4,9 @@
 requirements. Any potential design skills are a bonus, but usability, 
 performance and security will be taken into account.**
 
+## To Run
+`php -S localhost:1234` in project root folder then visit `http://localhost:1234` in the browser
+
 ## Introduction
 This project provides a starting point which will allow you to create your own 
 web-based encyclopedia based on the cartoon Rick and Morty.
