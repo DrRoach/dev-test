@@ -6,6 +6,19 @@ use Models\Character;
 
 class CharacterController extends Controller
 {
+    public function all()
+    {
+        $page = $_GET['page'] ?? 1;
+        $characters = Character::all($page);
+
+        return $this->view('index', [
+            'characters' => $characters,
+            'page' => $page,
+            'nextButtonPath' => "/?page=" . ++$page,
+            'prevButtonPath' => "/?page=" . --$page
+        ]);
+    }
+
     public function search()
     {
         $page = $_GET['page'] ?? 1;

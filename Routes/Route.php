@@ -21,7 +21,7 @@ class Route
     {
         // Array of routes and the namespaced controllers they call
         return [
-            '/' => 'src\Controllers\HomeController@index',
+            '/' => 'src\Controllers\CharacterController@all',
             '/search' => 'src\Controllers\CharacterController@search',
         ];
     }
